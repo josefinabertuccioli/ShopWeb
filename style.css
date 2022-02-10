@@ -14,18 +14,7 @@ main {
     list-style-type: none;
   }
   /* CATEGORY*/
-  .seasonsLinks ol {
-      margin-top: 1rem;
-      list-style-type: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      font-size: 1.4rem;
-    }
-  .seasonList {
-  grid-row: 2;
-  grid-column: 1;
-  }
+
   
   
   /*PRODUCT LIST*/
@@ -44,29 +33,6 @@ main {
   }
   .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr f1r;
-  }
-  .grid .breadcrumbs{
-    grid-row: 1;
-    grid-column: 1/-1;
-    margin-top: 1rem;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    font-size: 1.4rem;
-  }
-  .grid img{
-    grid-column: 1;
-    grid-row: 2/4;
-  }
-  .grid .purchasebox{
-    grid-column: 2;
-    grid-row: 2;
-  
-  }
-  .grid .product_info{
-    grid-column: 2;
-    grid-row: 3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
