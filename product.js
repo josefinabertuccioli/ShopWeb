@@ -17,8 +17,9 @@ document.querySelector( ".color").textContent=product.basecolour;
 document.querySelector( ".inventory").textContent=product.id;
 document.querySelector( ".info h1").textContent=product.brandname;
 document.querySelector( ".title").textContent=product.productdisplayname;
-document.querySelector( ".info p").textContent=product.brandbio;
-document.querySelector (".productM.productimage").src= `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`
-document.querySelector ("img.productimage").alt= product.productdisplayname;
+
+//document.querySelector( ".info p").textContent=product.brandbio;
+document.querySelector (".productM .productimage").src=`https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`
+document.querySelector (".productimage").alt= product.productdisplayname;
 
 }

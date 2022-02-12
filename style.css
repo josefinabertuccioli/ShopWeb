@@ -7,21 +7,26 @@ main {
     grid-gap: 1rem;
   }
   body{
-    padding: 4rem;
+    padding: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   li , ol{
     list-style-type: none;
   }
   /* CATEGORY*/
+header{ background-color: lightblue; display: flex; height: 8rem; grid-template-columns:1fr 1fr ;} 
+header nav{padding: 4rem;}
+
 
   
   
   /*PRODUCT LIST*/
   .productlist main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
     gap: 2rem;
+    
   }
   
   
@@ -33,6 +38,57 @@ main {
   }
   .grid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
+
+
+  .lettersList ol{list-style:none;
+    display: flex;
+    }
+    .lettersList ol li{margin: 0.3%;}
+    .lettersList ol li a{ color:#2e3192; font-size: 2rem;}
+    .brandList .letterGroup h2{ font-size: 2.5rem; margin-left: 2%;}
+    .brandList .letterGroup ol{ list-style:none ; display: flex; flex-wrap: wrap;}
+    .brandList .letterGroup ol li{ width: 35%; margin: 5%;  border-bottom: blue 1px solid; padding: 1%; }
+    .brandList .letterGroup ol li a{text-decoration: none; color: black; padding: 1%; font-size: 1.2rem;}
+    .brandList .letterGroup ol li:hover{ background-color: blue; transition: 0.3s;}
+    .listP{display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 400px));
+        gap: 2rem;}
+    .listP h2{ font-size: 2rem; margin-left: 5%; font-weight: 600; display: block; margin-bottom: 3%; grid-column: 1/-1;
+        grid-column-start: 1;
+        grid-column-end: -1;}
+    .listP article { display: flex; flex-direction: column; margin: 3%;}
+    .smallProduct a{ color: black;}
+    .subTitle{ color: blue;}
+    article.soldOut img {
+        opacity: 0.5;
+      }
+    article.soldOut::before {
+        content: "Sold Out";
+        position: absolute;
+        background: grey;
+        color: white;
+        padding: 1rem;
+      }
+      .discounted{display: none;}
+      article.onSale .discounted {
+        display: flex;
+        justify-content: space-between;
+      }
+      article.onSale .price span {
+        display: initial;
+      }
+      .showDiscount{ background-color: red; color: white;}
+      .productM{grid-column: 1;
+      grid-row: 2;}
+     
+      .productM h2{text-align: center; font-size: 2.5rem; margin-bottom: 0%;}
+      .productM ol{display: flex; list-style: none;}
+      .productM img{width: 60%; margin-left: 20%;}
+      .productM ol li{margin: 1%; border-right: 1px black solid; padding-right: 1%;}
+      .productM ol li a{color: black; text-decoration: none; margin: 1%;}
+      .purchaseBox{background-color: #2e3192; color: white; text-align: center;}
+      .purchaseBox h2{text-align: center;}
+      .purchaseBox h3{color:white; text-align: center;}
+      .info h2{text-align: left;}
